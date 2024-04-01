@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 30px 20px;
+}
+p{
+    padding: 25px;
+    background-color:rgb(6, 6, 73);
+    color: aliceblue;   
+    margin: 0;
+}
+
+.accordin-wrapper .accordin-items{
+    margin-bottom: 20px;
+}
+
+.accordin-wrapper .accordin-items .accordin-title{
+    position: relative;
+    background-color: rgb(171, 190, 190);
+    padding: 10px;
+
+}
+.accordin-wrapper .accordin-content{
+    display: none;
+}
+.accordin-wrapper .accordin-items .accordin-title::after{
+ position: absolute;
+ content:'';
+ right: 20px;
+ top:24%;
+ height: 15px;
+ width: 16px;
+ background-repeat: no-repeat;
+ background-image: url(../images/faq-right-arrow.svg);
+ background-size: contain;
+ background-position: center;
+ padding: 3px;
+ transition: 0.5s all;
+}
+
+.accordin-wrapper .accordin-items.active .accordin-title::after{
+transform: rotate(180deg);
+}

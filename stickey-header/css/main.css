@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header-site{
+    padding: 30px;
+    background: #0faa90;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    transition: 0.5s all linear;
+}
+.header-site .header-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.header-site .header-wrapper .logo a{
+    font-weight: 800;
+    font-size: 22px;
+}
+.header-site .header-wrapper .navbar ul{
+    display: flex;
+    margin: 0 -12px;
+}
+
+.header-site .header-wrapper .navbar ul li{
+    padding: 0 12px;
+}
+.header-site .header-wrapper .navbar ul li a{
+ font-size: 18px;
+ font-weight: 600;
+}
+.sticky_hrader .header-site{
+    padding: 15px 30px;
+}
+.sticky_hrader main{
+    padding: 56px 20px 20px;
+}
+main{
+    padding: 86px 20px 20px;
+}
